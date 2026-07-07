@@ -40,32 +40,32 @@
   /* Terminal-inspired dark palette */
   --background: oklch(0.16 0.012 250);
   --foreground: oklch(0.94 0.005 250);
-  --card: oklch(0.20 0.012 250);
+  --card: oklch(0.2 0.012 250);
   --card-foreground: oklch(0.94 0.005 250);
   --popover: oklch(0.18 0.012 250);
   --popover-foreground: oklch(0.94 0.005 250);
-  --primary: oklch(0.82 0.18 145);            /* phosphor green */
+  --primary: oklch(0.82 0.18 145); /* phosphor green */
   --primary-foreground: oklch(0.16 0.012 250);
   --secondary: oklch(0.26 0.015 250);
   --secondary-foreground: oklch(0.94 0.005 250);
   --muted: oklch(0.24 0.012 250);
   --muted-foreground: oklch(0.65 0.015 250);
-  --accent: oklch(0.78 0.16 75);              /* amber */
+  --accent: oklch(0.78 0.16 75); /* amber */
   --accent-foreground: oklch(0.16 0.012 250);
   --destructive: oklch(0.65 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.30 0.015 250);
+  --border: oklch(0.3 0.015 250);
   --input: oklch(0.26 0.015 250);
   --ring: oklch(0.82 0.18 145);
   --terminal: oklch(0.82 0.18 145);
   --amber: oklch(0.78 0.16 75);
-  --magenta: oklch(0.70 0.22 330);
+  --magenta: oklch(0.7 0.22 330);
 }
 
 .dark {
   --background: oklch(0.16 0.012 250);
   --foreground: oklch(0.94 0.005 250);
-  --card: oklch(0.20 0.012 250);
+  --card: oklch(0.2 0.012 250);
   --card-foreground: oklch(0.94 0.005 250);
   --popover: oklch(0.18 0.012 250);
   --popover-foreground: oklch(0.94 0.005 250);
@@ -79,21 +79,30 @@
   --accent-foreground: oklch(0.16 0.012 250);
   --destructive: oklch(0.65 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.30 0.015 250);
+  --border: oklch(0.3 0.015 250);
   --input: oklch(0.26 0.015 250);
   --ring: oklch(0.82 0.18 145);
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html, body {
+  * {
+    border-color: var(--color-border);
+  }
+  html,
+  body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
   }
-  code, pre, .font-mono { font-family: var(--font-mono); }
-  ::selection { background: oklch(0.82 0.18 145 / 0.35); }
+  code,
+  pre,
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  ::selection {
+    background: oklch(0.82 0.18 145 / 0.35);
+  }
 }
 
 @layer utilities {
@@ -116,9 +125,20 @@
     text-shadow: 0 0 12px oklch(0.82 0.18 145 / 0.55);
   }
   .ring-glow {
-    box-shadow: 0 0 0 1px oklch(0.82 0.18 145 / 0.4), 0 0 32px -4px oklch(0.82 0.18 145 / 0.35);
+    box-shadow:
+      0 0 0 1px oklch(0.82 0.18 145 / 0.4),
+      0 0 32px -4px oklch(0.82 0.18 145 / 0.35);
   }
-  @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+  @keyframes blink {
+    0%,
+    49% {
+      opacity: 1;
+    }
+    50%,
+    100% {
+      opacity: 0;
+    }
+  }
   .caret::after {
     content: "▌";
     margin-left: 2px;

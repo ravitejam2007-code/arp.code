@@ -5,7 +5,11 @@ export const Route = createFileRoute("/docs/commands")({
   head: () => ({
     meta: [
       { title: "Slash Commands — ARPCODE Docs" },
-      { name: "description", content: "Reference for every slash command in ARPCODE: /init, /plan, /build, /chat, /models, /connect, /export, and more." },
+      {
+        name: "description",
+        content:
+          "Reference for every slash command in ARPCODE: /init, /plan, /build, /chat, /models, /connect, /export, and more.",
+      },
       { property: "og:url", content: "/docs/commands" },
     ],
     links: [{ rel: "canonical", href: "/docs/commands" }],
@@ -50,8 +54,9 @@ export const Route = createFileRoute("/docs/commands")({
 
       <H2>File references</H2>
       <P>
-        Reference files inline with <Code>@path/to/file</Code> or <Code>{"{file:path/to/file}"}</Code>.
-        ARPCODE inlines the file contents (up to 50&nbsp;KB) into the model context.
+        Reference files inline with <Code>@path/to/file</Code> or{" "}
+        <Code>{"{file:path/to/file}"}</Code>. ARPCODE inlines the file contents (up to 50&nbsp;KB)
+        into the model context.
       </P>
     </DocPage>
   ),

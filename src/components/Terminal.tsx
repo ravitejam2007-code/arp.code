@@ -10,7 +10,9 @@ export function TerminalWindow({
   className?: string;
 }) {
   return (
-    <div className={`overflow-hidden rounded-md border border-border bg-card shadow-2xl ring-glow ${className}`}>
+    <div
+      className={`overflow-hidden rounded-md border border-border bg-card shadow-2xl ring-glow ${className}`}
+    >
       <div className="flex items-center gap-2 border-b border-border bg-background/80 px-3 py-2">
         <span className="size-2.5 rounded-full bg-destructive/80" />
         <span className="size-2.5 rounded-full bg-amber/80" />
@@ -21,9 +23,7 @@ export function TerminalWindow({
       </div>
       <div className="relative">
         <div className="pointer-events-none absolute inset-0 bg-scanlines opacity-40" />
-        <div className="relative p-4 font-mono text-[13px] leading-relaxed">
-          {children}
-        </div>
+        <div className="relative p-4 font-mono text-[13px] leading-relaxed">{children}</div>
       </div>
     </div>
   );

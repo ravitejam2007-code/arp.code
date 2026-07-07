@@ -5,7 +5,10 @@ export const Route = createFileRoute("/docs/config")({
   head: () => ({
     meta: [
       { title: "Configuration — ARPCODE Docs" },
-      { name: "description", content: "ARPCODE configuration schema. ~/.arp-code/config.json fields and defaults." },
+      {
+        name: "description",
+        content: "ARPCODE configuration schema. ~/.arp-code/config.json fields and defaults.",
+      },
       { property: "og:url", content: "/docs/config" },
     ],
     links: [{ rel: "canonical", href: "/docs/config" }],
@@ -43,7 +46,12 @@ export const Route = createFileRoute("/docs/config")({
         headers={["Key", "Type", "Default", "Notes"]}
         rows={[
           [<Code>version</Code>, "number", "1", "Schema version"],
-          [<Code>defaultProvider</Code>, '"openrouter"|"ollama"|"groq"|"gemini"', '"openrouter"', "Provider selected on launch"],
+          [
+            <Code>defaultProvider</Code>,
+            '"openrouter"|"ollama"|"groq"|"gemini"',
+            '"openrouter"',
+            "Provider selected on launch",
+          ],
           [<Code>theme</Code>, '"dark"|"dracula"|"solarized"', '"dark"', "TUI color theme"],
           [<Code>animations</Code>, "boolean", "true", "Spinners, transitions"],
           [<Code>sidebarVisible</Code>, "boolean", "true", "Stats sidebar"],
@@ -66,7 +74,10 @@ export const Route = createFileRoute("/docs/config")({
       />
 
       <H2>Editing config</H2>
-      <P>You can edit the JSON file directly, or use <Code>/connect &lt;provider&gt;</Code> from inside the TUI.</P>
+      <P>
+        You can edit the JSON file directly, or use <Code>/connect &lt;provider&gt;</Code> from
+        inside the TUI.
+      </P>
 
       <H2>Reset to defaults</H2>
       <CodeBlock lang="bash">{`rm ~/.arp-code/config.json

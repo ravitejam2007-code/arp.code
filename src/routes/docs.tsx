@@ -6,7 +6,11 @@ export const Route = createFileRoute("/docs")({
   head: () => ({
     meta: [
       { title: "Docs — ARPCODE" },
-      { name: "description", content: "ARPCODE documentation: install, providers, slash commands, built-in tools, and configuration reference." },
+      {
+        name: "description",
+        content:
+          "ARPCODE documentation: install, providers, slash commands, built-in tools, and configuration reference.",
+      },
       { property: "og:title", content: "ARPCODE Documentation" },
       { property: "og:description", content: "Install, providers, commands, tools, and config." },
       { property: "og:url", content: "/docs" },
@@ -34,9 +38,7 @@ const sections = [
   },
   {
     label: "Help",
-    items: [
-      { to: "/docs/faq", label: "FAQ" },
-    ],
+    items: [{ to: "/docs/faq", label: "FAQ" }],
   },
 ];
 
@@ -49,7 +51,9 @@ function DocsLayout() {
           <nav className="font-mono text-sm space-y-6">
             {sections.map((s) => (
               <div key={s.label}>
-                <div className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-2">{s.label}</div>
+                <div className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-2">
+                  {s.label}
+                </div>
                 <ul className="space-y-1">
                   {s.items.map((it) => (
                     <li key={it.to}>
@@ -57,7 +61,10 @@ function DocsLayout() {
                         to={it.to}
                         activeOptions={it.exact ? { exact: true } : undefined}
                         className="block border-l-2 border-transparent px-3 py-1 text-muted-foreground hover:text-foreground hover:border-border"
-                        activeProps={{ className: "block border-l-2 border-primary px-3 py-1 text-primary bg-card" }}
+                        activeProps={{
+                          className:
+                            "block border-l-2 border-primary px-3 py-1 text-primary bg-card",
+                        }}
                       >
                         {it.label}
                       </Link>
