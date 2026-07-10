@@ -132,7 +132,7 @@ yarn global add arp-code`}</CodeBlock>
 
       <H2>Verify the install</H2>
       <CodeBlock lang="bash">{`arpcode --version
-# arp-code 1.0.0
+# arp-code 1.0.1
 
 arpcode --help
 # Lists all flags and subcommands`}</CodeBlock>

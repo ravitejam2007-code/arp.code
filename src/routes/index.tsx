@@ -113,7 +113,7 @@ function LandingPage() {
           <div>
             <div className="inline-flex items-center gap-2 border border-border bg-card/60 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
               <span className="size-1.5 rounded-full bg-primary animate-pulse" />
-              v1.0.0 · MIT · open source
+              v1.0.1 · MIT · open source
             </div>
             <h1 className="mt-6 font-mono text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight">
               The AI pair programmer
@@ -162,7 +162,7 @@ function LandingPage() {
             <div className="mt-2 text-muted-foreground">
               <div>
                 <span className="text-primary">▍</span> ARPCODE{" "}
-                <span className="text-muted-foreground">v1.0.0</span>
+                <span className="text-muted-foreground">v1.0.1</span>
               </div>
               <div className="text-[11px]">
                 Provider: openrouter · Model: claude-sonnet · Mode: PLAN

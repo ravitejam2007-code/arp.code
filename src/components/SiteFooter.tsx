@@ -72,7 +72,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 text-muted-foreground sm:flex-row sm:justify-between">
           <div>© 2026 ARPCODE — MIT.</div>
-          <div>$ uptime: shipping since v1.0.0</div>
+          <div>$ uptime: shipping since v1.0.1</div>
         </div>
       </div>
     </footer>

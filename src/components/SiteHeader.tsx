@@ -12,7 +12,7 @@ export function SiteHeader() {
           <span>
             arp<span className="text-primary">code</span>
           </span>
-          <span className="hidden sm:inline text-xs text-muted-foreground">v1.0.0</span>
+          <span className="hidden sm:inline text-xs text-muted-foreground">v1.0.1</span>
         </Link>
         <nav className="flex items-center gap-1 font-mono text-xs">
           <Link
